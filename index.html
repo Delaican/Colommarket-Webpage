@@ -8,40 +8,47 @@
     <!-- <link href="/dist/output.css" rel="stylesheet"> -->
 </head>
 
-<body class="bg-gray-950 text-gray-100">
-    <header class="mx-auto px-6 py-2">
-        <div class="flex justify-center items-center">
-            <img src="assets/LogoColommarket_wh.png" alt="logo" class="h-32 object-contain" />
-        </div>
-        <div class="flex justify-center items-center mt-16">
-            <svg class="w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-            </svg>
-            <input type="search" id="barra-busqueda" placeholder="Buscar productos" class="rounded-md p-2 text-gray-700" onkeyup="filtrarTarjetas()">
+<body class="bg-[#121212] text-gray-100">
+    <header class="container mx-auto py-8">
+        <div class="flex items-center justify-between">
+            <img src="assets/Logo_Colommarket_wh2.png" alt="logo" class="h-36 mr-16">
+            <div class="relative w-full">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                </div>
+                <input type="search" id="barra-busqueda"
+                    class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Buscar productos" onkeyup="filtrarTarjetas()" required>
+            </div>
         </div>
     </header>
-    <section class="lg:pb-24 py-16">
+    <section class="lg:pb-24 py-8">
         <div class="container mx-auto px-6 py-6">
             <div class="grid lg:grid-cols-4 gap-16 place-items-center">
-                <div id="tarjeta-1"
-                    class="lg:w-[300px] lg:h-[375px] w-full overflow-hidden rounded-lg hover:drop-shadow-lg transform transition duration-500 hover:scale-105">
-                    <div>
-                        <img src="assets/Consola Retro Game Stick.jpg" alt="post1"
-                            class="h-[220px] object-cover rounded-t-lg w-full" />
+                <a href="https://www.colommarket.co/consola-retro">
+                    <div id="tarjeta-1"
+                        class="lg:w-[300px] lg:h-[375px] w-full overflow-hidden rounded-lg hover:drop-shadow-lg transform transition duration-500 hover:scale-105">
+                        <div>
+                            <img src="assets/Consola Retro Game Stick.jpg" alt="post1"
+                                class="h-[220px] object-cover rounded-t-lg w-full" />
+                        </div>
+                        <div class="bg-white text-black p-6">
+                            <h3 class="font-semibold mt-0">
+                                Consola Retro Game Stick
+                            </h3>
+                            <p class="mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed adipisci quos
+                                consectetur?
+                                Distinctio mollitia officiis eum dolore alias quidem voluptatem officia dolorem, magni
+                                laboriosam blanditiis vero, dicta quasi ullam?
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-white text-black p-6">
-                        <h3 class="font-semibold mt-0">
-                            Consola Retro Game Stick
-                        </h3>
-                        <p class="mt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed adipisci quos consectetur?
-                            Distinctio mollitia officiis eum dolore alias quidem voluptatem officia dolorem, magni
-                            laboriosam blanditiis vero, dicta quasi ullam?
-                        </p>
-                    </div>
-                </div>
+                </a>
                 <div id="tarjeta-2"
                     class="lg:w-[300px] lg:h-[375px] w-full overflow-hidden rounded-lg drop-shadow-lg transform transition duration-500 hover:scale-105">
                     <div>
