@@ -8,10 +8,10 @@
     <!-- <link href="/dist/output.css" rel="stylesheet"> -->
 </head>
 
-<body class="bg-[#F0F0F0] dark:text-gray-100">
+<body class="bg-[#F0F0F0]">
     <header class="bg-[#F45050]">
-        <div class="container mx-auto py-8 flex items-center justify-between">
-            <img src="assets/Logo_Colommarket_wh2.png" alt="logo" class="h-32 mr-16 ml-8">
+        <div class="container mx-auto py-2 flex items-center justify-between">
+            <img src="assets/Logo_Colommarket_wh2.png" alt="logo" class="h-20 mr-16 ml-4">
             <div class="relative w-full mx-4">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
@@ -21,7 +21,7 @@
                     </svg>
                 </div>
                 <input type="search" id="barra-busqueda"
-                    class="w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                    class="w-full p-3 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Buscar productos" onkeyup="filtrarTarjetas()">
             </div>
         </div>
@@ -250,6 +250,29 @@
             </div> -->
         </div>
     </section>
+    <footer class="bg-[#3C486B] p-8 mt-8 text-[#F0F0F0]">
+        <div class="flex container mx-auto">
+                <div class="w-1/2 grid grid-cols-1 gap-4">
+                    <p class="font-bold">Cl. 42 #27-39, Girón, Santander, Colombia</p>
+                    <p class="font-bold">(314) 460 8517</p>
+                    <div>
+                        <p class="font-bold">&copy; 2023 Colommarket &reg;</p>
+                        <p>Todos los derechos reservados</p>
+                    </div>
+                </div>
+                <!-- <div class="w-1/3 flex items-center justify-center">
+                    <img src="assets/Logo_Colommarket_wh2.png" alt="logo" class="w-20">
+                </div> -->
+                <div class="w-1/2 grid grid-cols-2 gap-4">
+                    <a href="https://www.colommarket.co/terminos-y-condiciones">Términos y condiciones</a>
+                    <a href="https://www.colommarket.co/politicas-de-envios">Políticas de envíos</a>
+                    <a href="https://www.colommarket.co/politicas-de-devoluciones">Políticas de devoluciones</a>
+                    <a href="https://www.colommarket.co/politicas-de-privacidad">Políticas de privacidad</a>
+                    <a href="https://www.colommarket.co/preguntas-frecuentes">Preguntas frecuentes</a>
+                </div>
+
+        </div>
+    </footer>
     <script>
         // Función que filtra las tarjetas según la palabra clave
         function filtrarTarjetas() {
